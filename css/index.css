@@ -1,0 +1,25 @@
+@charset "utf-8";
+/* CSS Document */
+
+#bg{
+	background-image:url(../images/index_bg.png) ;
+	background-repeat: no-repeat;
+	background-position: right top;
+	background-attachment: fixed;/*固定图像*/
+	cursor:auto;
+}
+#tip{
+	padding:20px;
+    width: 200px;
+	border-radius:25px;/*圆角*/
+	background-color:#3598DB;
+ 	opacity:0.5;
+	color:#FFFFFF;
+	font-weight:bold;
+	font-size:30px;
+	position:absolute;
+	left:50%;
+	margin-left:-100px;
+	text-align:center;
+	
+}

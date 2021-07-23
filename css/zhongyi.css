@@ -1,8 +1,7 @@
-@charset "utf-8";
-/* CSS Document */
+@charset 'utf-8';
 *{
-	margin: 0;
-	padding: 0;
+    margin: 0;
+    padding: 0;
 }
 li{
 	list-style: none;
@@ -10,13 +9,33 @@ li{
 i{
 	font-style: normal;
 }
+body{
+    background-image: url(../images/index.png);
+    background-repeat: no-repeat;
+    background-position: center bottom ;
+    width: 100vw;
+    height: 100vh;
+}
+.title1{
+    height: 40px;
+	width: 80px;
+	border-radius: 5px;
+	background-color:transparent;
+	text-align: center;
+	position:absolute;
+	top: 8%;
+	left: 23%;
+	transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+}
 #wrap{
 	position: relative;
-	width: 1280px;
-	height: 720px;
-	margin: 50px auto;
+	width: 750px;
+	height: 400px;
+	margin: 0 auto;
+    top:22%;
 }
-.title,.num{
+.num{
 	position: absolute;
 	width: 100%;
 	left: 0;
@@ -39,11 +58,12 @@ ul li{
 	left: 0;
 	width: 100%;
 	height: 400px;
+
 }
 ul li.on{
 	display: block;
-	width:1280px;
-	height: 720px;
+	width: 750px;
+	height: 500px;
 }
 ul li img{
 	width: 100%;
@@ -67,19 +87,10 @@ ul li img{
 .return {
 	height: 50px;
 	width: 100px;
-	border-radius: 5px;
-	background-color:#227BB7;
-	text-align: center;
+	background-color:transparent;
 	position:absolute;
-	top: 85%;
-	left: 80%;
+	top: 88%;
+	left: 90%;
 	transform: translate(-50%, -50%);
 	-ms-transform: translate(-50%, -50%);
-}
-.return a{
-	font-size: 20px;
-	color: white;
-	font-family:幼圆;
-	line-height: 50px;
-	text-decoration: none;
 }

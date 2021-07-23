@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style type="text/css">
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        li{
+            list-style: none;
+        }
+        i{
+            font-style: normal;
+        }
+        a img{border:0;}
+        a img:hover{border:0;}
+        body{
+            background-image: url(../xxq/images/index.png);
+            background-repeat: no-repeat;
+            background-position: center bottom;
+            width: 100vw;
+            height: 100vh;
+            margin:0;
+        }
+        #box{
+            height: 620px;
+            width: 1000px;
+            margin: 0 auto;
+            position: relative;
+            background-image:url(../xxq/images/r4.png);
+        }
+        #bt {
+            position:absolute;
+            top:10%;
+            left:29%;
+        }
+        
+        /*内容*/
+        #t11{
+            position:absolute;
+            top:8%;
+            left:22%;
+            } 
+        
+        #tm{
+            position:absolute;
+            top:210px;
+            left:275px;
+            width:470px;
+            height:300px;
+            font-family:"幼圆";
+            color:#575757;
+            font-weight:bold;}
+        #tm h2{
+            font-size:24px;
+            }
+        #tm ul{
+            font-size:21px;
+            }
+            #tj{
+            background-color:transparent;
+            background-image: url(./images/r90.png);
+            border:0;
+            font-family:"幼圆";
+            color:#575757;
+            font-weight:bold;
+            height:60px;
+            width:120px;
+            font-size:21px;
+            border-radius:3px;
+            position:absolute;
+            left:160px;
+            top:240px;
+            }
+        #an1{
+            position:absolute;
+            top:100px;
+            left:90px;
+        }
+        #an2{
+            position:absolute;
+            top:100px;
+            left:320px;
+        }
+        #cw1{
+            position:absolute;
+            top:90px;
+            left:150px;
+        }
+        #zq{
+            position:absolute;
+            top:85px;
+            left:380px;
+        }
+        #ts{
+            position:absolute;
+            top:68%;
+            left:31%;
+            font-size:21px;
+            color:#DD4A4C;
+        }
+        /*内容*/
+        /*上一页*/
+        #syy a img{
+            position:absolute;
+            top:440px;
+            left:240px;
+            
+            }
+        #syy a img:hover{
+              transform:scale(1.1);
+             
+            }
+        /*上一页*/
+        
+        /*下一页*/
+        #xyy a img{
+            position:absolute;
+            top:440px;
+            left:680px;
+            
+            }
+        #xyy a img:hover{
+              transform:scale(1.1);
+             
+            }	
+        /*下一页*/
+        /*返回*/
+        .return {
+            height: 50px;
+            width: 100px;
+            background-color:transparent;
+            position:absolute;
+            top: 88%;
+            left: 90%;
+
+        }
+        /*返回*/
+        </style>
+        <script type="text/javascript">
+        function myFunction()
+        {
+            var abc=document.myform.answer.value;
+            var audio1 = document.getElementById('music1'); 
+            var audio2 = document.getElementById('music2'); 
+            if(abc=="answer1")
+            {
+                document.getElementById("cw1").style.display = "block";
+                document.getElementById("zq").style.display = "none";
+                document.getElementById("ts").style.display = "none";
+            audio2.play(); 
+            }
+            else if(abc=="answer2")
+            {
+                document.getElementById("zq").style.display = "block";
+                document.getElementById("cw1").style.display = "none";
+                document.getElementById("ts").style.display = "none";
+            audio1.play(); 
+            }
+            else
+            {
+                document.getElementById("ts").style.display = "block";
+                document.getElementById("zq").style.display = "none";
+                document.getElementById("cw1").style.display = "none";
+            audio2.play(); 
+        }
+        }
+        </script>
+        
+        </head>
+        
+        <body>
+        <div id="box">
+        <img src="images/r103.png" id="bt" width="120px" height="55px">
+    
+        <!--内容-->
+        
+        <img src="images/r74.png" width="80px" height="65px" id="t11">
+        
+        <div id="tm">
+        <h2>10&nbsp;.&nbsp;小宇每次在拐弯的地方都小心慢行。</h2>
+        <form action="" method="post" name="myform" id="myform">
+        <ul style="list-style:none;">
+        <li id="an1"><input type="radio" value="answer1" name="answer" />错</li>
+        <li id="an2"><input type="radio" value="answer2" name="answer" />对</li>
+        </ul>
+        <input type="button" value="查看" name="submit" onClick="myFunction()" id="tj" >
+        
+        <img src="images/r65.png" width="60px" height="45px" id="cw1" style="display:none">
+        <img src="images/r69.png" width="60px" height="50px" id="zq" style="display:none">
+        <div id="ts" style="display:none">请先选择答案哦！</div>
+        
+        <audio controls preload id="music1" hidden>
+          <source src=" music/true.mp3" type="audio/mp3" />
+          <source src=" music/true.ogg" type="audio/ogg" />
+        <object data=" music/true.ogg ">
+        <embed src=" music/true.mp3" />
+        </object>
+        </audio>
+        
+        <audio controls preload id="music2" hidden>
+          <source src=" music/false.mp3" type="audio/mp3" />
+          <source src=" music/false.ogg" type="audio/ogg" />
+        <object data=" music/false.ogg ">
+        <embed src=" music/false.mp3" />
+        </object>
+        </audio>
+        
+        </form>
+        </div>
+        
+        <!--内容-->
+        <div id="syy">
+        <a href="test9.html"><img src="images/r81.png" width="90px" height="70px"></a>
+        </div>
+        <div id="xyy">
+        <a href="test.html"><img src="images/r82.png" width="90px" height="70px"></a>
+        </div>
+        <!--返回-->
+        <div class="return">
+            <a href="people.html">
+                <img src="./images/return.png" width="130px" height="95px">
+            </a>
+        </div>
+        <!--返回-->
+        </div>
+        </body>
+        </html>
+        

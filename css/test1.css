@@ -1,1 +1,153 @@
 @charset 'utf-8';
+*{
+    margin: 0;
+    padding: 0;
+}
+li{
+    list-style: none;
+}
+i{
+    font-style: normal;
+}
+a img{border:0;}
+a img:hover{border:0;}
+body{
+    background-image: url(../images/index.png);
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    width: 100vw;
+    height: 100vh;
+    margin:0;
+}
+#box{
+    height: 620px;
+    width: 1000px;
+    margin: 0 auto;
+    position: relative;
+    background-image:url(../images/r4.png);
+}
+#bt {
+    position:absolute;
+    top:10%;
+    left:29%;
+}
+
+/*内容*/
+#t11{
+    position:absolute;
+    top:8%;
+    left:22%;
+    } 
+
+#tm{
+    position:absolute;
+    top:210px;
+    left:275px;
+    width:470px;
+    height:300px;
+    font-family:"幼圆";
+    color:#575757;
+    font-weight:bold;}
+#tm h2{
+    font-size:24px;
+    }
+#tm ul{
+    font-size:21px;
+    }
+#tj{
+    background-color:transparent;
+    background-image: url(./images/r90.png);
+    border:0;
+    font-family:"幼圆";
+    color:#575757;
+    font-weight:bold;
+    height:60px;
+    width:120px;
+    font-size:21px;
+    border-radius:3px;
+    position:absolute;
+    left:160px;
+    top:240px;
+}
+#an1{
+    position:absolute;
+    top:90px;
+    left:50px;
+}
+#an2{
+    position:absolute;
+    top:90px;
+    left:290px;
+}
+#an3{
+    position:absolute;
+    top:150px;
+    left:50px;
+}
+#an4{
+    position:absolute;
+    top:150px;
+    left:290px;
+}
+#cw1{
+    position:absolute;
+    top:80px;
+    left:200px;
+}
+#cw2{
+    position:absolute;
+    top:140px;
+    left:175px;
+}
+#cw3{
+    position:absolute;
+    top:140px;
+    left:400px;
+}
+#zq{
+    position:absolute;
+    top:80px;
+    left:405px;
+}
+#ts{
+    position:absolute;
+    top:68%;
+    left:31%;
+    font-size:21px;
+    color:#DD4A4C;
+}
+/*内容*/
+/*上一页*/
+#syy a img{
+    position:absolute;
+    top:440px;
+    left:240px;
+    
+    }
+#syy a img:hover{
+    transform:scale(1.1);
+     
+    }
+/*上一页*/
+/*下一页*/
+#xyy a img{
+    position:absolute;
+    top:440px;
+    left:680px;
+    
+    }
+#xyy a img:hover{
+    transform:scale(1.1);
+    
+    }	
+/*下一页*/
+/*返回*/
+.return {
+    height: 50px;
+    width: 100px;
+    background-color:transparent;
+    position:absolute;
+    top: 88%;
+    left: 90%;
+}
+/*返回*/

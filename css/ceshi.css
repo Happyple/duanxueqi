@@ -27,9 +27,19 @@ body {
     letter-spacing: 0.025em;
     transition: font-size 0.45s ease-in-out, color 0.3s ease-out;
 }
-.header-image {
+.header-image-1 {
     height: 220px;
-    background-image: url(../images/1.jpg);
+    background-image: url(../images/4.jpg);
+    background-size: cover;/*图片背景颜色大小*/
+    background-position: center;
+    margin-bottom: 3rem;
+    position: relative;
+    transition: all 0.45s ease-in-out;
+
+}
+.header-image-2 {
+    height: 220px;
+    background-image: url(../images/DSCF5333.jpg);
     background-size: cover;/*图片背景颜色大小*/
     background-position: center;
     margin-bottom: 3rem;

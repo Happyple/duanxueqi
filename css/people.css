@@ -63,8 +63,8 @@ body{
 	-moz-transform:rotateY(180deg);
 }
 .face{
-	height: 200px;
-	width: 200px;
+	height: 250px;
+	width: 193px;
 	position:absolute;
 	-webkit-backface-visibility:hidden;
 	-moz-backface-visibility:hidden;
@@ -84,6 +84,6 @@ body{
 	background: -webkit-gradient(linear,left top,left bottom,from(#7fc2d3),to(#49679d));
 	background:-moz-linear-gradient(top,#7fc2d3,#49679d);
 	/*根据正面图片大小调整背面*/
-	width:200px;
-	height:200px;
+	width:193px;
+	height:250px;
 }

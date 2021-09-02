@@ -19,13 +19,23 @@
     a img{border:0;}
     a img:hover{border:0;}
     body{
-        background-image: url(../xxq/images/index.png);
+        background-image: url(../images/index.png);
         background-repeat: no-repeat;
         background-position: center bottom;
+        text-align: center;
         width: 100vw;
         height: 100vh;
         margin:0;
     }
+    #box{
+            height: 400px;
+            width: 600px;
+            margin: 0 auto;
+            position: relative;
+            background-image:url(../images/dati2.png);
+            background-repeat: no-repeat;
+            top: 150px;
+        }
     /*返回*/
     .return {
         height: 50px;
@@ -41,11 +51,15 @@
 </style>
 </head>
 <body>
-
-    <div class="return">
-        <a href="people.html">
-            <img src="./images/return.png" width="130px" height="95px">
-        </a>
+    <div id="box">
+        <img src="./images/dtwc.png" width="720px" height="320px">
+        <!--返回-->
+        <div class="return">
+            <a href="people.html">
+                <img src="./images/return.png" width="130px" height="95px">
+            </a>
+        </div>
+        <!--返回-->
     </div>
 
 </body>

@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>练习题</title>
     <style type="text/css">
         *{
             margin: 0;
@@ -19,7 +19,7 @@
         a img{border:0;}
         a img:hover{border:0;}
         body{
-            background-image: url(../xxq/images/index.png);
+            background-image: url(../images/index.png);
             background-repeat: no-repeat;
             background-position: center bottom;
             width: 100vw;
@@ -31,14 +31,13 @@
             width: 1000px;
             margin: 0 auto;
             position: relative;
-            background-image:url(../xxq/images/r4.png);
+            background-image:url(../images/r4.png);
         }
         #bt {
             position:absolute;
             top:10%;
             left:29%;
         }
-        
         /*内容*/
         #t11{
             position:absolute;
@@ -78,23 +77,43 @@
             }
         #an1{
             position:absolute;
-            top:110px;
+            top:90px;
             left:90px;
         }
         #an2{
             position:absolute;
-            top:110px;
-            left:320px;
+            top:120px;
+            left:90px;
+        }
+        #an3{
+            position:absolute;
+            top:150px;
+            left:90px;
+        }
+        #an4{
+            position:absolute;
+            top:180px;
+            left:90px;
         }
         #cw1{
             position:absolute;
-            top:100px;
-            left:150px;
+            top:80px;
+            left:255px;
+        }
+        #cw2{
+            position:absolute;
+            top:140px;
+            left:255px;
+        }
+        #cw3{
+            position:absolute;
+            top:175px;
+            left:255px;
         }
         #zq{
             position:absolute;
-            top:95px;
-            left:380px;
+            top:110px;
+            left:255px;
         }
         #ts{
             position:absolute;
@@ -137,7 +156,6 @@
             position:absolute;
             top: 88%;
             left: 90%;
-
         }
         /*返回*/
         </style>
@@ -150,6 +168,8 @@
             if(abc=="answer1")
             {
                 document.getElementById("cw1").style.display = "block";
+                document.getElementById("cw2").style.display = "none";
+                document.getElementById("cw3").style.display = "none";
                 document.getElementById("zq").style.display = "none";
                 document.getElementById("ts").style.display = "none";
             audio2.play(); 
@@ -158,14 +178,36 @@
             {
                 document.getElementById("zq").style.display = "block";
                 document.getElementById("cw1").style.display = "none";
+                document.getElementById("cw2").style.display = "none";
+                document.getElementById("cw3").style.display = "none";
                 document.getElementById("ts").style.display = "none";
             audio1.play(); 
+            }
+            else if(abc=="answer3")
+            {
+                document.getElementById("cw2").style.display = "block";
+                document.getElementById("cw1").style.display = "none";
+                document.getElementById("zq").style.display = "none";
+                document.getElementById("cw3").style.display = "none";
+                document.getElementById("ts").style.display = "none";
+            audio2.play(); 
+            }
+            else if(abc=="answer4")
+            {
+                document.getElementById("cw3").style.display = "block";
+                document.getElementById("cw1").style.display = "none";
+                document.getElementById("cw2").style.display = "none";
+                document.getElementById("zq").style.display = "none";
+                document.getElementById("ts").style.display = "none";
+            audio2.play(); 
             }
             else
             {
                 document.getElementById("ts").style.display = "block";
                 document.getElementById("zq").style.display = "none";
                 document.getElementById("cw1").style.display = "none";
+                document.getElementById("cw2").style.display = "none";
+                document.getElementById("cw3").style.display = "none";
             audio2.play(); 
         }
         }
@@ -175,21 +217,25 @@
         
         <body>
         <div id="box">
-        <img src="images/r103.png" id="bt" width="120px" height="55px">
+        <img src="images/r102.png" id="bt" width="120px" height="55px">
         <!--内容-->
         
         <img src="images/r74.png" width="80px" height="65px" id="t11">
         
         <div id="tm">
-        <h2>8&nbsp;.&nbsp;小丽每次使用完剪刀后都马上把它合上收好。</h2>
+        <h2>8&nbsp;.&nbsp;以数字科技创新为关键动力，强化云上浙江和数据强省两大基础支撑，聚焦（）三大数字化转型。</h2>
         <form action="" method="post" name="myform" id="myform">
         <ul style="list-style:none;">
-        <li id="an1"><input type="radio" value="answer1" name="answer" />错</li>
-        <li id="an2"><input type="radio" value="answer2" name="answer" />对</li>
+        <li id="an1"><input type="radio" value="answer1" name="answer" />经济 社会 环境</li>
+        <li id="an2"><input type="radio" value="answer2" name="answer" />政府 经济 社会</li>
+        <li id="an3"><input type="radio" value="answer3" name="answer" />技术 经济 环境</li>
+        <li id="an4"><input type="radio" value="answer4" name="answer" />政府 经济 技术</li>
         </ul>
         <input type="button" value="查看" name="submit" onClick="myFunction()" id="tj" >
         
         <img src="images/r65.png" width="60px" height="45px" id="cw1" style="display:none">
+        <img src="images/r65.png" width="60px" height="45px" id="cw2" style="display:none">
+        <img src="images/r65.png" width="60px" height="45px" id="cw3" style="display:none">
         <img src="images/r69.png" width="60px" height="50px" id="zq" style="display:none">
         <div id="ts" style="display:none">请先选择答案哦！</div>
         
@@ -227,6 +273,6 @@
         </div>
         <!--返回-->
         </div>
+        </div>
         </body>
         </html>
-        

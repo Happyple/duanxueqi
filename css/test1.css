@@ -14,7 +14,8 @@ a img:hover{border:0;}
 body{
     background-image: url(../images/index.png);
     background-repeat: no-repeat;
-    background-position: center bottom;
+    background-position: center;
+	background-size:cover;
     width: 100vw;
     height: 100vh;
     margin:0;
@@ -56,7 +57,7 @@ body{
     }
 #tj{
     background-color:transparent;
-    background-image: url(./images/r90.png);
+    background-image: url(../images/r90.png);
     border:0;
     font-family:"幼圆";
     color:#575757;

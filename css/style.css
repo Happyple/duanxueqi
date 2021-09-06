@@ -15,7 +15,8 @@ i{
 body{
     background-image: url(../images/index.png);
     background-repeat: no-repeat;
-    background-position: center bottom ;
+    background-position: center;
+	background-size:cover;
     background-attachment:fixed;
     overflow-x: hidden;
     width: 100vw;

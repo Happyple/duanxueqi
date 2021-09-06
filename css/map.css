@@ -12,7 +12,8 @@ i{
 body{
     background-image: url(../images/index.png);
     background-repeat: no-repeat;
-    background-position: center bottom ;
+    background-position: center;
+	background-size:cover;
     width: 100vw;
     height: 100vh;
 }
